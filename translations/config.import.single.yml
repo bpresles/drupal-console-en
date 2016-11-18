@@ -7,4 +7,4 @@ questions:
     file: 'Enter path to the import file'
 messages:
     empty-value: 'Value can not be empty'
-    success: 'The configuration "%s", had been imported.'
+    success: 'The configuration "%s", has been imported.'
