@@ -1,0 +1,19 @@
+description: 'Export configurations as yml file based on a list in the YAML file passed as argument.'
+arguments:
+    config-list-file: 'YAML File containing the configs names to export.'
+options:
+    include-dependencies: 'Export dependencies of the configuration as well.'
+    simple-configuration: 'Simple configuration'
+    optional-config: 'Export config as an optional YAML configuration in your module'
+questions:
+    config-list-file: 'Enter path to config list file (relatively to Drupal root)'
+    config-type: 'Configuration type'
+    optional-config: 'Export config in module as an optional configuration'
+    remove-uuid: 'Do you want to remove the uuid from this export'
+messages:
+    config-list-file-not-found: 'Configuration list file %s not found.'
+    config-list-file-empty: 'Configuration list file parameter must not be empty.'
+    invalid-config-type: 'Invalid config type, please select one of the list'
+    invalid-config-list-file-format: 'Invalid config list file format. Please use a valid YAML file'
+    invalid-config-list-file-content: 'Invalid config list file content. The file msut contain a configs key with a list of config names'
+    config_exported: 'Configuration(s) exported sucessfully'
