@@ -6,12 +6,13 @@ options:
     simple-configuration: 'Simple configuration'
     optional-config: 'Export config as an optional YAML configuration in your module'
 questions:
-    config-list-file: 'Enter path to config list file (relatively to Drupal root)'
+    config-list-file: 'Enter path to config list file (absolutely or relatively to Drupal root)'
     config-type: 'Configuration type'
     optional-config: 'Export config in module as an optional configuration'
     remove-uuid: 'Do you want to remove the uuid from this export'
 messages:
     config-list-file-not-found: 'Configuration list file %s not found.'
+    invalid-directory: 'Invalid directory path.'
     config-list-file-empty: 'Configuration list file parameter must not be empty.'
     invalid-config-type: 'Invalid config type, please select one of the list'
     invalid-config-list-file-format: 'Invalid config list file format. Please use a valid YAML file'

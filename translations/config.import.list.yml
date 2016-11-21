@@ -4,9 +4,10 @@ arguments:
 options:
     directory: 'Define the directory where to find the configurations files for the import. (default SYNC directory)'
 questions:
-    config-list-file: 'Enter path to config list file (relatively to Drupal root)'
+    config-list-file: 'Enter path to config list file (absolutely or relatively to Drupal root)'
 messages:
     config-list-file-not-found: 'Configuration list file %s not found.'
+    invalid-directory: 'Invalid directory path.'
     config-list-file-empty: 'Configuration list file parameter must not be empty.'
     empty-value: 'Value can not be empty'
     success: 'The configuration "%s", has been imported.'
